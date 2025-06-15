@@ -1,0 +1,997 @@
+:root{
+    --main: royalblue;
+    --secondary: darkblue;
+    --text-color: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.header{
+    width: 100%;
+    padding: 30px 10px 25px 10px;
+    background: var(--secondary);
+    background-image: linear-gradient(to top, #000000, transparent),url(../images/img-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: normal;
+    text-align: center;
+}
+.header h1{
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: 630;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+.main{
+    width: 100%;
+    padding-top: 30px;
+    background-color: #eee;
+}
+.main h2{
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 420;
+    color: black;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid lightgrey;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 10px 40px 10px 40px;
+    margin-bottom: 2.5rem;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+.img-col img{
+    width: 100%;
+    height: 250px
+}
+.col-text h3{
+    color:  var(--secondary);
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 420;
+    margin-bottom: 12px;
+    padding-bottom: 1px;
+    border-bottom: .1px solid lightgrey;
+}
+.col-text p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 22px;
+    color: black;
+    margin-bottom: 2rem;
+}
+.col-text .button{
+    width: 10rem;
+    padding: 13px 20px;
+    outline: none;
+    border: none;
+    background-color: var(--main);
+    color: var(--text-color);
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 420;
+    cursor: pointer;
+}
+.main h4{
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    font-weight: 520;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+    line-height: 1.3;
+    max-width: 600px;
+    margin: auto;
+}
+/*//// text for electrical page////*/
+/*////////////////////////////////*/
+#h4-text{
+    margin-top: 2rem;
+}
+.main-p-text p{
+    font-size: 13px;
+    text-align: center;
+    width: 70%;
+    max-width: 700px;
+    margin: auto;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: black;
+    margin-bottom: 1rem;
+}
+#main-p-text{
+    margin-bottom: 2rem;
+}
+.contact{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 10px 40px 10px 40px;
+    align-items: flex-start;
+    place-items: center;
+    flex-grow: 1;
+    border-top: 1px solid lightgrey;
+    flex-wrap: wrap;
+}
+.contact-info h5{
+    padding-top: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 520;
+    color: var(--secondary);
+    margin-bottom: 13px;
+}
+.contact .home-btn{
+    width: 10rem;
+    padding: 13px 10px;
+    outline: none;
+    border: none;
+    background-color: var(--secondary);
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+.contact .home-btn a{
+    color: var(--text-color);
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 420;
+    text-decoration: none;
+}
+.contact .home-btn:active{
+    transform: translateY(1.1rem);
+    transition: .2s ease;
+}
+.info > li ion-icon{
+    font-size: 20px;
+    color: var(--secondary);
+    margin-right: 5px;
+}
+.info > li{
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: black;
+    padding-bottom: 8px;
+}
+.business-card{
+    width: 100%;
+    border-radius: 10px;
+}
+.business-card img{
+    width: 100%;
+    height: 260px;
+    border-radius: 10px;
+}
+/*//// text for construction page/////////*/
+/*///////////////////////////////////////*/
+#gallery, .gallery{
+    margin-bottom: 2rem;
+    background-color: rgb(12, 12, 34);
+    padding-bottom: 1rem;
+}
+.gallery-row{
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 360px);
+    grid-gap: 8px;
+    overflow-x: scroll;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+.gallery-row img{
+    height: 300px;
+    width: 100%;
+}
+footer p{
+    width: 100%;
+    padding: 20px 5px 20px 5px;
+    background-color: var(--secondary);
+    color: var(--text-color);
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 420;
+    text-align: center;
+}
+/*/////////////////////////////////////////*/
+/*///// Start of responsive viewport /////*/
+/*///////////////////////////////////////*/
+@media screen and (max-width:1024px) and (min-width: 504px) {
+    .header{
+        width: 100%;
+        padding: 25px 10px 25px 10px;
+        background: var(--secondary);
+        background-image: linear-gradient(to top, #000000, transparent),url(../images/img-3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: normal;
+        text-align: center;
+    }
+    .header h1{
+        font-size: 33px;
+        letter-spacing: 1.5px;
+        font-weight: 620;
+        color: var(--text-color);
+        margin-bottom: 1rem;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        padding: 10px 30px 10px 30px;
+        margin-bottom: 2.5rem;
+        flex-grow: 1;
+        flex-wrap: wrap;
+    }
+    .contact{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        padding: 10px 20px 10px 20px;
+        align-items: flex-start;
+        place-items: center;
+        flex-grow: 1;
+        border-top: 1px solid lightgrey;
+        flex-wrap: wrap;
+    }
+    .contact-info h5{
+        padding-top: 10px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 520;
+        color: var(--secondary);
+        margin-bottom: 15px;
+    }
+    .info > li ion-icon{
+        font-size: 18px;
+        color: var(--secondary);
+        margin-right: 5px;
+    }
+    .info > li{
+        display: block;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: black;
+        padding-bottom: 8px;
+    }
+    .contact .home-btn{
+        width: 10rem;
+        padding: 13px 10px;
+        outline: none;
+        border: none;
+        background-color: var(--secondary);
+        cursor: pointer;
+        margin-top: 1rem;
+        border-radius: 5px;
+    }
+    .contact .home-btn a{
+        color: var(--text-color);
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        text-decoration: none;
+    }
+    .business-card{
+        width: 90%;
+        border-radius: 10px;
+    }
+    /*/////// css for plumbing //////////////*/
+    /*//////////////////////////////////////*/
+    .main{
+        width: 100%;
+        padding-top: 20px;
+        background-color: #eee;
+    }
+    .main h2{
+        font-size: 23px;
+        letter-spacing: 1px;
+        font-weight: 430;
+        color: black;
+        text-align: center;
+        padding-bottom: 5px;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid lightgrey;
+    }
+    .img-col img{
+        width: 95%;
+        height: 250px;
+        border-radius: 5px;
+    }
+    .col-text h3{
+        color:  var(--secondary);
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        margin-bottom: 14px;
+        border-bottom: 1px solid var(--secondary);
+    }
+    .col-text p{
+        font-size: 13px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        color: black;
+        margin-bottom: 2rem;
+    }
+    .main h4{
+        text-align: center;
+        font-size: 23px;
+        color: black;
+        font-weight: 520;
+        letter-spacing: 1px;
+        padding-bottom: 15px;
+        line-height: 1.3;
+        max-width: 600px;
+        margin: auto;
+    }
+    /*/// h4-text for electrical ///////*/
+    /*/////////////////////////////////*/
+    #h4-text{
+        text-align: center;
+        font-size: 23px;
+        color: black;
+        font-weight: 520;
+        letter-spacing: 1px;
+        padding-bottom: 15px;
+        line-height: 1.2;
+        max-width: 600px;
+        margin: auto;
+    }
+    .main-p-text p, #mainp-text{
+        font-size: 12px;
+        text-align: center;
+        width: 70%;
+        max-width: 650px;
+        margin: auto;
+        letter-spacing: 1px;
+        line-height: 19px;
+        color: black;
+        margin-bottom: 1rem;
+    }
+    .main-p-text p{
+        margin-bottom: 1.5rem;
+    }
+    .gallery{
+        margin-bottom: 2rem;
+    }
+    footer p{
+        width: 100%;
+        padding: 25px 5px 25px 5px;
+        background-color: var(--secondary);
+        color: var(--text-color);
+        font-size: 15px;
+        letter-spacing: 2px;
+        font-weight: 420;
+        text-align: center;
+    }
+}
+@media  screen and (max-width: 768px) and (min-width: 504px) {
+    .header h1{
+        font-size: 30px;
+        letter-spacing: 1.3px;
+        font-weight: 620;
+        color: var(--text-color);
+        margin-bottom: 1rem;
+    }
+    .gallery-row{
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px 10px 20px 10px;
+        display: grid;
+        grid-template-columns: repeat(6, 330px);
+        grid-gap: 8px;
+        overflow-x: scroll;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        flex-grow: 1;
+    }
+    .gallery-row img{
+        height: 250px;
+    }
+    .contact{
+        width: 100%;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-gap: 20px;
+        padding: 15px 45px 10px 45px;
+        align-items: flex-start;
+        place-items: center;
+        text-align: center;
+        flex-grow: 1;
+        border-top: 1px solid lightgrey;
+        flex-wrap: wrap;
+    }
+    .contact-info h5{
+        padding-top: 10px;
+        font-size: 23px;
+        letter-spacing: 1px;
+        font-weight: 530;
+        color: var(--secondary);
+        margin-bottom: 17px;
+    }
+    .info > li ion-icon{
+        font-size: 20px;
+        color: var(--secondary);
+        margin-right: 10px;
+    }
+    .info > li{
+        display: block;
+        font-size: 17px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: black;
+        padding-bottom: 12px;
+    }
+    .contact .home-btn{
+        width: 11rem;
+        padding: 14px 10px;
+        outline: none;
+        border: none;
+        background-color: var(--secondary);
+        cursor: pointer;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+    }
+    .contact .home-btn a{
+        color: var(--text-color);
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        text-decoration: none;
+    }
+    .business-card{
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 600px) and (min-width:504px) {
+    .header h1{
+        font-size: 25px;
+        letter-spacing: 1.2px;
+        font-weight: 620;
+        color: var(--text-color);
+        margin-bottom: 1rem;
+    }
+    /*// plumbing text xol-text ///////*/
+    /*////////////////////////////////*/
+    .main h2{
+        font-size: 23px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        color: black;
+        text-align: center;
+        padding-bottom: 5px;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid lightgrey;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+        padding: 10px 30px 10px 30px;
+        margin-bottom: 2.5rem;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .img-col img{
+        width: 100%;
+        height: 270px
+    }
+    .col-text h3{
+        color:  var(--secondary);
+        font-size: 23px;
+        letter-spacing: 1px;
+        font-weight: 430;
+        margin-bottom: 14px;
+        border-bottom: 1px solid var(--secondary);
+    }
+    .col-text p{
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 18px;
+        color: black;
+        margin-bottom: 2rem;
+    }
+    .main h4, #h4-text{
+        text-align: center;
+        font-size: 20px;
+        color: black;
+        font-weight: 520;
+        letter-spacing: 1px;
+        padding-bottom: 14px;
+        line-height: 1.3;
+        max-width: 600px;
+        margin: auto;
+    }
+    .main-p-text p, #mainp-text{
+        font-size: 12px;
+        text-align: center;
+        width: 80%;
+        max-width: 650px;
+        margin: auto;
+        letter-spacing: .1px;
+        line-height: 17px;
+        color: black;
+        margin-bottom: 1rem;
+    }
+    .gallery-row{
+        width: 95%;
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px 10px 20px 10px;
+        display: grid;
+        grid-template-columns: repeat(6, 300px);
+        grid-gap: 8px;
+        overflow-x: scroll;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        flex-grow: 1;
+    }
+    .gallery-row img{
+        height: 250px;
+    }
+    #gallery{
+        margin-bottom: 1rem;
+    }
+    .contact{
+        width: 100%;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-gap: 20px;
+        padding: 10px 30px 10px 30px;
+        align-items: flex-start;
+        place-items: center;
+        text-align: center;
+        flex-grow: 1;
+        border-top: 1px solid lightgrey;
+        flex-wrap: wrap;
+    }
+    .contact-info h5{
+        padding-top: 10px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 520;
+        color: var(--secondary);
+        margin-bottom: 17px;
+    }
+    .info > li ion-icon{
+        font-size: 18px;
+        color: var(--secondary);
+        margin-right: 8px;
+    }
+    .info > li{
+        display: block;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: black;
+        padding-bottom: 12px;
+    }
+    .contact .home-btn{
+        width: 11rem;
+        padding: 14px 10px;
+        outline: none;
+        border: none;
+        background-color: var(--secondary);
+        cursor: pointer;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+    }
+    .contact .home-btn a{
+        color: var(--text-color);
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        text-decoration: none;
+    }
+    footer p{
+        width: 100%;
+        padding: 25px 5px 25px 5px;
+        background-color: var(--secondary);
+        color: var(--text-color);
+        font-size: 13px;
+        letter-spacing: 1.5px;
+        font-weight: 420;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 504px) {
+    .header h1{
+        font-size: 24px;
+        letter-spacing: 1.2px;
+        font-weight: 550;
+        margin-bottom: 1rem;
+    }
+    .main{
+        width: 100%;
+        padding-top: 20px;
+    }
+    /*// plumbing text col-text ///////*/
+    /*////////////////////////////////*/
+    .main h2{
+        font-size: 21px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        color: black;
+        text-align: center;
+        padding-bottom: 5px;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid lightgrey;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+        padding: 10px 20px 10px 20px;
+        margin-bottom: 2.5rem;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .img-col img{
+        width: 100%;
+        height: 250px
+    }
+    .col-text h3{
+        color:  var(--secondary);
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        margin-bottom: 14px;
+        border-bottom: 1px solid var(--secondary);
+    }
+    .col-text p{
+        font-size: 12px;
+        letter-spacing: .1px;
+        line-height: 18px;
+        color: black;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .main h4, #h4-text{
+        font-size: 18px;
+        font-weight: 520;
+        letter-spacing: 1px;
+        padding-bottom: 13px;
+        line-height: 1.3;
+        max-width: 560px;
+        margin: auto;
+    }
+    #h4-text{
+        padding-top: 12px;
+    }
+    .main-p-text p, #main-p-text{
+        font-size: 11px;
+        text-align: center;
+        width: 87%;
+        max-width: 630px;
+        margin: auto;
+        letter-spacing: 0px;
+        line-height: 16px;
+        margin-bottom: 1rem;
+    }
+    .gallery-row{
+        width: 95%;
+        max-width: 900px;
+        margin: auto;
+        padding: 20px 10px 15px 10px;
+        display: grid;
+        grid-template-columns: repeat(6, 260px);
+        grid-gap: 7px;
+        overflow-x: scroll;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    .gallery-row img{
+        height: 220px;
+    }
+    #gallery{
+        margin-bottom: 1rem;
+    }
+    .contact{
+        width: 100%;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-gap: 20px;
+        padding: 10px 20px 10px 20px;
+        align-items: flex-start;
+        place-items: center;
+        text-align: center;
+        flex-grow: 1;
+        border-top: 1px solid lightgrey;
+        flex-wrap: wrap;
+    }
+    .contact-info h5{
+        padding-top: 10px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 520;
+        color: var(--secondary);
+        margin-bottom: 17px;
+    }
+    .info > li ion-icon{
+        font-size: 16px;
+        color: var(--secondary);
+        margin-right: 8px;
+    }
+    .info > li{
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: black;
+        padding-bottom: 12px;
+    }
+    .contact .home-btn{
+        width: 10rem;
+        padding: 13px 10px;
+        outline: none;
+        border: none;
+        background-color: var(--secondary);
+        cursor: pointer;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+    }
+    .contact .home-btn a{
+        color: var(--text-color);
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        text-decoration: none;
+    }
+    .business-card img{
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+    }
+    footer p{
+        width: 100%;
+        padding: 25px 5px 25px 5px;
+        background-color: var(--secondary);
+        color: var(--text-color);
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        font-weight: 420;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 425px) {
+    .header{
+        width: 100%;
+        padding: 23px 10px 20px 10px;
+        background-image: linear-gradient(to top, #000000, transparent),url(../images/img-3.jpg);
+    }
+    .header h1{
+        font-size: 22px;
+        letter-spacing: 1px;
+        font-weight: 530;
+        margin-bottom: 1rem;
+    }
+    .main{
+        width: 100%;
+        padding-top: 15px;
+    }
+    /*// plumbing text col-text ///////*/
+    /*////////////////////////////////*/
+    .main h2{
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        padding-bottom: 5px;
+        margin-bottom: 1rem;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+        padding: 10px 15px 10px 15px;
+        margin-bottom: 2.5rem;
+    }
+    .img-col img{
+        width: 100%;
+        height: 230px
+    }
+    .col-text h3{
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        margin-bottom: 15px;
+    }
+    .col-text p{
+        font-size: 11px;
+        letter-spacing: 0px;
+        line-height: 18px;
+        width: 95%;
+        max-width: 600px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .col-text .button{
+        width: 10rem;
+        padding: 12px 20px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        border-radius: 5px;
+    }
+    .main h4, #h4-text{
+        font-size: 16px;
+        font-weight: 520;
+        letter-spacing: .1px;
+        padding-bottom: 13px;
+        line-height: 1.2;
+        max-width: 500px;
+        margin: auto;
+    }
+    #h4-text{
+        padding-top: 12px;
+    }
+    .main-p-text p, #main-p-text{
+        font-size: 11px;
+        text-align: center;
+        width: 87%;
+        max-width: 600px;
+        margin: auto;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+    .contact{
+        width: 100%;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-gap: 20px;
+        padding: 10px 15px 10px 15px;
+        align-items: flex-start;
+    }
+    .contact-info h5{
+        padding-top: 10px;
+        font-size: 17px;
+        letter-spacing: .1px;
+        font-weight: 520;
+        margin-bottom: 17px;
+    }
+    .info > li ion-icon{
+        font-size: 14px;
+        margin-right: 8px;
+        display: none;
+    }
+    .info > li{
+        display: block;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: .1px;
+        padding-bottom: 10px;
+    }
+    .contact .home-btn{
+        width: 10rem;
+        padding: 13px 10px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+    }
+    .contact .home-btn a{
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: 420;
+    }
+    .business-card img{
+        width: 100%;
+        height: 230px;
+        border-radius: 10px;
+    }
+    .gallery-row{
+        width: 95%;
+        max-width: 900px;
+        margin: auto;
+        padding: 25px 10px 15px 10px;
+        display: grid;
+        grid-template-columns: repeat(6, 250px);
+        grid-gap: 7px;
+        overflow-x: scroll;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    .gallery-row img{
+        height: 220px;
+    }
+    #gallery{
+        margin-bottom: 1rem;
+    }
+    footer p{
+        width: 100%;
+        padding: 25px 5px 25px 5px;
+        font-size: 11px;
+        letter-spacing: 1px;
+        font-weight: 420;
+    }
+}
+@media screen and (max-width:375px) {
+    .header{
+        width: 100%;
+        padding: 23px 10px 15px 10px;
+        background-image: linear-gradient(to top, #000000, transparent),url(../images/img-3.jpg);
+    }
+    .header h1{
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 520;
+        margin-bottom: 1rem;
+    }
+    .main-p-text p, #main-p-text{
+        font-size: 11px;
+        width: 93%;
+        max-width: 550px;
+        margin: auto;
+        line-height: 15px;
+        margin-bottom: 10px;
+    }
+    .main h4, #h4-text{
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0px;
+        padding-bottom: 13px;
+        line-height: 1.2;
+        max-width: 500px;
+        margin: auto;
+    }
+    .contact-info h5{
+        padding-top: 10px;
+        font-size: 16px;
+        letter-spacing: 0px;
+        font-weight: 520;
+        margin-bottom: 17px;
+    }
+    .info > li{
+        display: block;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        padding-bottom: 8px;
+    }
+    .gallery-row{
+        width: 95%;
+        max-width: 900px;
+        margin: auto;
+        padding: 23px 10px 13px 10px;
+        display: grid;
+        grid-template-columns: repeat(6, 230px);
+        grid-gap: 6px;
+        overflow-x: scroll;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    .gallery-row img{
+        height: 200px;
+    }
+}

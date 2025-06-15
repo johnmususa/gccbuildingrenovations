@@ -1,0 +1,4066 @@
+:root{
+    --main: royalblue;
+    --secondary: darkblue;
+    --text-color: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background: #f1f1f1;
+    padding: 13px;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    transition: .3s ease;
+}
+.logo h1{
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    letter-spacing: .1px;
+}
+.logo span{
+    font-size: 24px;
+    color: royalblue;
+    letter-spacing: 1px;
+    font-family: 'Pacifico', sans-serif;
+    font-weight: 400;
+}
+nav .nav-checkbox{
+    display: none;
+}
+nav .menu li{
+    display: inline-block;
+    padding: 8px 10px;
+}
+nav li > a{
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 420;
+}
+nav li > a:hover{
+    color: var(--main);
+    cursor: pointer;
+    transition: .3s ease;
+}
+.call{
+    background-color: royalblue;
+    padding: 8px;
+    border-radius: 3px;
+    align-items: center;
+}
+.call p{
+    font-size: 14px;
+    color: white;
+}
+.call ion-icon{
+    font-size: 17px;
+    color: white;
+}
+.menu-btn{
+    display: none;
+}
+/*//////////////////////////////////////*/
+/*/////////////////////////////////////*/
+.banner{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary);
+    background-image: linear-gradient(to right, #07071e, transparent),url(images/img-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: normal;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.text-box{
+    width: 95%;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 25px 10px 20px 30px;
+    border-radius: 5px;
+}
+.text-box h1{
+    font-size: 57px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    font-weight: 620;
+    color: black;
+    margin-bottom: 18px;
+    color: var(--text-color);
+}
+.text-box p{
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-size: 400;
+    max-width: 700px;
+    line-height: 25px;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+.banner button{
+    width: 11rem;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid white;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+.banner button:active{
+    transform: translateY(1.1rem);
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.banner button a{
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 420;
+}
+.contact-btn a{
+    color: black;
+    font-weight: 420;
+}
+.service-btn{
+    background-color: transparent;
+    margin-left: 1rem;
+}
+.service-btn:hover{
+    background-color: var(--secondary);
+    cursor: pointer;
+}
+.service-btn a{
+    color: var(--text-color);
+    font-weight: 420;
+}
+/*/////////////////////////////////*/
+/*////////////////////////////////*/
+#about-us{
+    padding-top: 40px;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+#about-us h1{
+    font-size: 27px;
+    font-weight: 620;
+    color: black;
+    text-align: center;
+    letter-spacing: .1px;
+    margin-bottom: 1.3rem;
+}
+#about-us .about-text{
+    width: 55%;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    color: black;
+}
+#about-us .about-container{
+    padding: 10px 15px 10px 15px;
+}
+#about-us > .about-container .row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 15px 30px 10px 30px;
+}
+#about-us .col{
+    align-items: flex-start;
+    padding: 15px 10px 20px 10px;
+    border-radius: 5px;
+    box-shadow:  2px 4px  #ccc;
+}
+#about-us .col img{
+    width: 100%;
+    height: 220px;
+    margin-bottom: 1rem;
+}
+#about-us > .about-container .col-text ion-icon{
+    font-size: 35px;
+    height: 27px;
+    width: 27px;
+    margin-bottom: 8px;
+    color: var(--main);
+}
+#about-us > .about-container .col-text h2{
+    font-size: 17px;
+    letter-spacing: .1px;
+    color: black;
+    font-weight: 430;
+    padding-bottom: 12px;
+}
+#about-us > .about-container .col-text p{
+    font-size: 13px;
+    letter-spacing: .1px;
+    line-height: 18px;
+    color: black;
+    margin-bottom: 1rem;
+}
+#about-us > .about-container .learn-btn{
+    font-size: 18px;
+    letter-spacing: .1px;
+    color: var(--main);
+    font-weight: 420;
+}
+#about-us > .about-container .learn-btn:hover{
+    border-bottom: 1px solid var(--main);
+    cursor: pointer;
+}
+/*//////////////////////////////*/
+/*/////////////////////////////*/
+.vision{
+    width: 100%;
+    padding-top: 30px;
+}
+.vision h3{
+    text-align: center;
+    font-size: 27px;
+    letter-spacing: 1px;
+    font-weight: 520;
+    color: black;
+    padding-bottom: 15px;
+}
+.vision .vision-text{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    max-width: 700px;
+    line-height: 19px;
+    font-size: 14px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+.slider{
+    width: 100%;
+    padding: 15px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(10, 350px);
+    grid-gap: 7px;
+    max-width: 1300px;
+    overflow-x: scroll;
+    margin-top: 2.5rem;
+    margin-bottom: 2.7rem;
+    background-color: #eee;
+}
+.slider img{
+    width: 100%;
+    height: 300px;
+}
+/*//////////////////////////////////*/
+/*/////////////////////////////////*/
+.projects{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.projects h2{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 420;
+    color: black;
+    padding-bottom: 12px;
+}
+.projects p{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    max-width: 600px;
+    line-height: 18px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+.project-view{
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.view-row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+.project-view  .card{
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: 0px 1px 1px #333;
+}
+.project-view  .card img{
+    width: 100%;
+    height: 250px;
+    z-index: 5;
+    margin-bottom: 1px;
+}
+.view-row .card-info span{
+    font-size: 11px;
+    padding: 9px 10px;
+    background-color: var(--secondary);
+    font-weight: 420;
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+.view-row .card-info h4{
+    padding-top: 1.2rem;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 420px;
+    padding-bottom: 12px;
+}
+.view-row .card-info h5{
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 1.3rem;
+}
+.view-row .card-info a{
+    color: var(--secondary);
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 420;
+    padding-bottom: 10px;
+}
+.view-btn{
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+.view-btn a{
+    background-color: var(--secondary);
+    color: var(--text-color);
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 420;
+    border-radius: 30px;
+    outline: none;
+    padding: 14px 50px;
+    box-shadow: 0px 2px 4px #333;
+}
+.view-btn a:hover{
+    background-color: #07072e;
+    transition: .1s ease;
+}
+/*//////////////////////////////////*/
+/*/////////////////////////////////*/
+.reviews{
+    width: 100%;
+    padding-top: 20px;
+    border-top: 1px solid lightgrey;
+    margin-bottom: 2.5rem;
+}
+.reviews h4{
+    text-align: center;
+    font-size: 27px;
+    letter-spacing: .1px;
+    font-weight: 420;
+    color: black;
+    padding-bottom: 8px;
+}
+.reviews h6{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    max-width: 600px;
+    line-height: 18px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+.client-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    grid-row-gap: 20px;
+    padding: 10px 25px 10px 25px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+.client-col{
+    box-shadow: 0px 1px 1.3px #333;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.client-col h5{
+    font-size: 21px;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 420;
+    text-align: center;
+    color: var(--secondary);
+}
+.client-col ion-icon{
+    font-size: 23px;
+    color: var(--secondary);
+}
+.solid-2{
+    width: 75%;
+    margin: auto;
+    margin-bottom: 12px;
+}
+.client-col .star-icon{
+    font-size: 17px;
+    color: orange;
+    outline: none;
+    text-align: center;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.client-col p{
+    font-size: 13px;
+    letter-spacing: .1px;
+    line-height: 19px;
+    color: black;
+}
+/*//////////////////////////////////*/
+/*/////////////////////////////////*/
+#contact{
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+.contact-div{
+    background-color: var(--secondary);
+    padding: 30px 10px 40px 10px;
+}
+.contact-div h3{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 530;
+    color: var(--text-color);
+    padding-bottom: 13px;
+}
+.contact-div p{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    max-width: 600px;
+    line-height: 18px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+.action-btns{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.action-btns button{
+    width: 12rem;
+    outline: none;
+    border-radius: 5px;
+    padding: 13px 13px;
+    cursor: pointer;
+    font-size: 13px;
+    letter-spacing: .1px;
+    font-weight: 420;
+    border: 2px solid white;
+}
+.action-btns .quote{
+    background-color: #fff;
+    color: black;
+    font-weight: 420;
+}
+.action-btns .call{
+    background-color: transparent;
+    color: var(--text-color);
+    margin-left: 1rem;
+}
+
+/*////////////////////////////////*/
+/*///////////////////////////////*/
+.container-contact{
+    width: 100%;
+    padding: 30px 30px 20px 30px;
+}
+.container-contact .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+}
+.trading-hours{
+    align-items: flex-start;
+}
+.trading-hours h2{
+    color: var(--secondary);
+    font-weight: 630;
+    letter-spacing: 1px;
+    font-size: 23px;
+}
+.trading-hours hr{
+    margin-bottom: 1rem;
+}
+.trading-hours p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 19px;
+    color: black;
+    padding-bottom: 12px;
+}
+.trading-hours .infor h3{
+    font-size: 20px;
+    color: var(--secondary);
+    letter-spacing: 1px;
+    font-weight: 430;
+    padding-bottom: 15px;
+}
+.infor ul{
+    margin-bottom: 1rem;
+}
+.infor ul ion-icon{
+    font-size: 16px;
+    padding-right: 11px;
+}
+.infor ul li{
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: black;
+    line-height: 27px;
+}
+.infor ol li{
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: black;
+    line-height: 23px;
+}
+.infor ol{
+    margin-bottom: 1.5rem;
+}
+.map-col iframe{
+    width: 580px;
+    height: 370px;
+}
+form{
+    width: 100%;
+    padding: 13px;
+    background-color: #eee;
+}
+form label{
+    color: var(--secondary);
+    justify-content: center;
+    align-items: center;
+}
+form label,input{
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding: 13px 10px;
+    outline: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+form:has:email(valid){
+    border: 1px solid green;
+}
+form::placeholder{
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+form .option-text{
+    text-align: center;
+    padding-top: 20px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: .1px solid red;
+}
+.serv-options{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    width: 70%;
+    grid-column-gap: 20px;
+    margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+    align-items: center;
+    place-items: center;
+    letter-spacing: 1px;
+}
+form textarea{
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding: 13px 10px;
+    outline: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+form textarea::placeholder{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+form .submit-btn{
+    width: 90%;
+    margin: auto;
+    margin-top: 1.5rem;
+    padding: 13px 10px;
+    background-color: var(--main);
+    color: var(--text-color);
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 420;
+    outline: none;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    cursor: pointer;
+}
+form .submit-btn:active{
+    transform: translateY(1.1rem);
+    transition: .2s ease;
+    cursor: pointer;
+}
+/*///////////////////////////*/
+/*//////////////////////////*/
+footer{
+    width: 100%;
+    padding: 30px 20px 20px 20px;
+    background-color: var(--secondary);
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.footer-list h1{
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: var(--text-color);
+    font-weight: 520;
+    margin-bottom: 18px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+}
+.footer-list p{
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 22px;
+    margin-bottom: 1.2rem;
+}
+.socials a ion-icon{
+    color: var(--text-color);
+    width: 24px;
+    height: 24px;
+    padding: 8px 18px;
+}
+.socials a ion-icon:hover{
+    color: yellow;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.footer-list ul li, a {
+    color: var(--text-color);
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 420;
+    padding-bottom: 12px;
+}
+.footer-list ol li{
+    color: var(--text-color);
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 420;
+    padding-bottom: 10px;
+}
+.footer-list ol li ion-icon{
+    font-size: 17px;
+    padding-right: 10px;
+}
+.footer-list ol li:hover, .footer-list ul li a:hover{
+    color: yellow;
+    cursor: pointer;
+    transition: .2s easein-out;
+}
+.rights{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    background-color: var(--secondary);
+    color: var(--text-color);
+}
+.rights p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.rights h1, a{
+    font-size: 17px;
+    letter-spacing: .2px;
+    font-weight: 420;
+}
+/*/////////////////////////////////////////////////////*/
+/*////////// START OF RESPONSIVE VIEWPORT /////////////*/
+/*////////////////////////////////////////////////////*/
+@media screen and (max-width:1100px) and (min-width: 502px){
+    .logo h1{
+        font-size: 14px;
+        letter-spacing: .1px;
+    }
+    .logo span{
+        font-size: 23px;
+        letter-spacing: 1px;
+    }
+    nav .menu li{
+        display: inline-block;
+        padding: 8px 8px;
+    }
+    nav li > a{
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 420;
+    }    
+    .call p{
+        font-size: 13px;
+    }
+    .call ion-icon{
+        font-size: 15px;
+    }
+    .text-box{
+        width: 95%;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 20px 20px 20px 35px;
+        border-radius: 5px;
+    }
+    .text-box h1{
+        font-size: 53px;
+        letter-spacing: 1px;
+        line-height: 1.1;
+        font-weight: 620;
+        margin-bottom: 17px;
+    }
+    .text-box p{
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-size: 400;
+        max-width: 650px;
+        line-height: 23px;
+        margin-bottom: 1.5rem;
+    }
+    .banner button{
+        width: 10rem;
+        border: 2px solid white;
+        padding: 12px 10px;
+    }
+    .banner button a{
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 420;
+    }
+    /*/////////////////////////////////*/
+    /*////////////////////////////////*/
+    #about-us{
+        padding-top: 30px;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    #about-us h1{
+        font-size: 23px;
+        font-weight: 530;
+        text-align: center;
+        letter-spacing: .1px;
+        margin-bottom: 1.3rem;
+    }
+    #about-us .about-text{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+    }
+    #about-us .about-container{
+        padding: 10px 10px 10px 10px;
+    }
+    #about-us > .about-container .row{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        padding: 15px 20px 10px 20px;
+    }
+    #about-us .col img{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 1rem;
+    }
+    #about-us > .about-container .col-text ion-icon{
+        font-size: 30px;
+        height: 25px;
+        width: 25px;
+        margin-bottom: 8px;
+    }
+    #about-us > .about-container .col-text h2{
+        font-size: 16px;
+        letter-spacing: .1px;
+        font-weight: 430;
+        padding-bottom: 12px;
+    }
+    #about-us > .about-container .col-text p{
+        font-size: 12px;
+        letter-spacing: .1px;
+        line-height: 17px;
+        margin-bottom: 1rem;
+    }
+    #about-us > .about-container .learn-btn{
+        font-size: 15px;
+        letter-spacing: .1px;
+        font-weight: 420;
+    }
+    /*//////////////////////////////*/
+    /*/////////////////////////////*/
+    .vision{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .vision h3{
+        text-align: center;
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        padding-bottom: 17px;
+    }
+    .vision .vision-text{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        max-width: 650px;
+        line-height: 18px;
+        font-size: 13px;
+        margin-bottom: 12px;
+        letter-spacing: 1px;
+    }
+    .slider{
+        width: 100%;
+        padding: 15px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(10, 330px);
+        grid-gap: 7px;
+        max-width: 1200px;
+        overflow-x: scroll;
+        margin-top: 2.3rem;
+        margin-bottom: 2.7rem;
+        background-color: #eee;
+    }
+    .slider img{
+        width: 100%;
+        height: 270px;
+    }
+    /*//////////////////////////////////*/
+    /*/////////////////////////////////*/
+    .projects{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .projects h2{
+        text-align: center;
+        font-size: 26px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        padding-bottom: 12px;
+    }
+    .projects p{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        max-width: 600px;
+        line-height: 18px;
+        font-size: 13px;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+    }
+    .project-view{
+        padding: 10px 15px 10px 15px;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .view-row{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 12px;
+        flex-grow: 1;
+        flex-wrap: wrap;
+    }
+    .project-view  .card img{
+        width: 100%;
+        height: 200px;
+        z-index: 5;
+        margin-bottom: 1px;
+    }
+    .view-row .card-info span{
+        font-size: 10px;
+        padding: 9px 8px;
+        background-color: var(--secondary);
+        font-weight: 420;
+        color: var(--text-color);
+        letter-spacing: 1px;
+    }
+    .view-row .card-info h4{
+        padding-top: 1.2rem;
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 420px;
+        padding-bottom: 12px;
+    }
+    .view-row .card-info h5{
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 17px;
+        font-weight: 400;
+        margin-bottom: 1.3rem;
+    }
+    .view-row .card-info a{
+        color: var(--secondary);
+        letter-spacing: 1px;
+        font-size: 15px;
+        font-weight: 420;
+        padding-bottom: 10px;
+    }
+    .view-btn a{
+        background-color: var(--secondary);
+        color: var(--text-color);
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        padding: 12px 45
+        px;
+        box-shadow: 0px 2px 4px #333;
+    }
+    /*//////////////////////////////////*/
+    /*/////////////////////////////////*/
+    .reviews{
+        width: 100%;
+        padding-top: 10px;
+        border-top: 1px solid WHITE;
+        margin-bottom: 2.5rem;
+    }
+    .reviews h4{
+        text-align: center;
+        font-size: 25px;
+        letter-spacing: .1px;
+        font-weight: 430;
+        padding-bottom: 10px;
+    }
+    .reviews h6{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        max-width: 550px;
+        line-height: 16px;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+    }
+    .client-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 12px;
+        grid-row-gap: 20px;
+        padding: 10px 20px 10px 20px;
+        flex-grow: 1;
+        flex-wrap: wrap;
+    }
+    .client-col{
+        align-items: flex-start;
+        padding: 8px;
+    }
+    .client-col h5{
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        text-align: center;
+    }
+    .client-col ion-icon{
+        font-size: 20px;
+        color: var(--secondary);
+    }
+    .solid-2{
+        width: 72%;
+        margin: auto;
+        margin-bottom: 13px;
+    }
+    .client-col .star-icon{
+        font-size: 15px;
+        color: orange;
+        text-align: center;
+        margin-bottom: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+    .client-col p{
+        font-size: 12px;
+        letter-spacing: .1px;
+        line-height: 18px;
+        text-align: left;
+    }
+    /*//////////////////////////////////*/
+    /*/////////////////////////////////*/
+    #contact{
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+    .contact-div{
+        background-color: var(--secondary);
+        padding: 30px 10px 30px 10px;
+    }
+    .contact-div h3{
+        text-align: center;
+        font-size: 26px;
+        letter-spacing: 1px;
+        font-weight: 530;
+        padding-bottom: 15px;
+    }
+    .contact-div p{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        max-width: 600px;
+        line-height: 18px;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+        color: var(--text-color);
+    }
+    .action-btns button{
+        width: 11rem;
+        padding: 11px 13px;
+        font-size: 12px;
+        letter-spacing: .1px;
+        font-weight: 400;
+        border: 2px solid white;
+    }
+    /*////////////////////////////////*/
+    /*///////////////////////////////*/
+    .container-contact{
+        width: 100%;
+        padding: 30px 10px 20px 10px;
+    }
+    .container-contact .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        align-items: center;
+        padding: 10px 15px 10px 15px;
+    }
+    .trading-hours{
+        align-items: flex-start;
+    }
+    .trading-hours h2{
+        color: var(--secondary);
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+    .trading-hours hr{
+        margin-bottom: 1rem;
+    }
+    .trading-hours p{
+        font-size: 13px;
+        letter-spacing: 1px;
+        line-height: 18px;
+        padding-bottom: 13px;
+    }
+    .trading-hours .infor h3{
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 430;
+        padding-bottom: 15px;
+    }
+    .infor ul{
+        margin-bottom: 1rem;
+    }
+    .infor ul li ion-icon{
+        font-size: 17px;
+        padding-right: 10px;
+    }
+    .infor ul li{
+        font-size: 13px;
+        letter-spacing: 1px;
+        line-height: 25px;
+    }
+    .infor ol li{
+        font-size: 13px;
+        letter-spacing: 1px;
+        line-height: 21px;
+    }
+    .infor ol{
+        margin-bottom: 1.5rem;
+    }
+    .map-col iframe{
+        width: 500px;
+        height: 350px;
+    }
+    form{
+        -moz-column-counth: 100%;
+        padding: 11px;
+    }
+    form label{
+        color: var(--secondary);
+        justify-content: center;
+        align-items: center;
+    }
+    form label,input{
+        display: block;
+        width: 90%;
+        margin: auto;
+        padding: 12px 10px;
+        font-size: 13px;
+        letter-spacing: 1px;
+        border-radius: 5px;
+    }
+    form:has:email(valid){
+        border: 1px solid green;
+    }
+    form::placeholder{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .serv-options{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        width: 85%;
+        grid-column-gap: 20px;
+        margin: auto;
+        margin-top: 1.5rem;
+        margin-bottom: 1.2rem;
+        align-items: center;
+        place-items: center;
+        letter-spacing: 1px;
+        font-size: 13px;
+    }
+    form textarea{
+        display: block;
+        width: 90%;
+        margin: auto;
+        padding: 12px 10px;
+        font-size: 13px;
+        letter-spacing: 1px;
+        border-radius: 5px;
+    }
+    form textarea::placeholder{
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    form .submit-btn{
+        width: 90%;
+        margin: auto;
+        margin-top: 1.5rem;
+        padding: 13px 10px;
+        background-color: var(--main);
+        color: var(--text-color);
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        outline: none;
+        border: none;
+        text-align: center;
+        justify-content: center;
+        place-items: center;
+        cursor: pointer;
+    }
+    /*///////////////////////////*/
+    /*//////////////////////////*/
+    footer{
+        width: 100%;
+        padding: 35px 15px 25px 15px;
+        background-color: var(--secondary);
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-gap: 15px;
+    }
+    .footer-list h1{
+        font-size: 20px;
+        letter-spacing: 1px;
+        color: var(--text-color);
+        font-weight: 520;
+        margin-bottom: 18px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid white;
+    }
+    .footer-list p{
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 20px;
+        margin-bottom: 1.2rem;
+    }
+    .socials a ion-icon{
+        width: 23px;
+        height: 23px;
+        padding: 8px 15px;
+    }
+    .footer-list ol li{
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+    .footer-list ol li ion-icon{
+        font-size: 15px;
+        padding-right: 8px;
+    }
+    .footer-list ul li{
+        padding-bottom: 8px;
+    }
+    .footer-list ul li  a {
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+    .rights{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px;
+    }
+    .rights p{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .rights h1, a{
+        font-size: 14px;
+        letter-spacing: .2px;
+        font-weight: 420;
+    }
+}
+@media screen and (max-width:1024px) and (min-width: 502px){
+    header{
+        padding: 10px;
+    }
+    .logo h1{
+        font-size: 13px;
+        letter-spacing: .1px;
+    }
+    .logo span{
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    nav .menu li{
+        display: inline-block;
+        padding: 7px 7px;
+    }
+    nav li > a{
+        font-size: 13px;
+        letter-spacing: .1px;
+        font-weight: 420;
+    }    
+    .call p{
+        font-size: 13px;
+    }
+    .call ion-icon{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:942px) and (min-width: 502px){
+    header{
+        padding: 10px;
+    }
+    .logo h1{
+        font-size: 13px;
+        letter-spacing: .1px;
+    }
+    .logo span{
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+    nav .menu li{
+        display: inline-block;
+        padding: 7px 7px;
+    }
+    nav li > a{
+        font-size: 13px;
+        letter-spacing: .1px;
+        font-weight: 410;
+    }    
+    .call p{
+        font-size: 12px;
+        letter-spacing: .1px;
+    }
+    .call ion-icon{
+        font-size: 12px;
+    }
+    .text-box{
+        width: 95%;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 10px 15px 10px 25px;
+    }
+    .text-box h1{
+        font-size: 50px;
+        letter-spacing: 1px;
+        line-height: 1.1;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .text-box p{
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-size: 400;
+        max-width: 600px;
+        line-height: 23px;
+        margin-bottom: 1.5rem;
+    }
+    .banner button{
+        width: 10rem;
+        border: 2px solid white;
+        padding: 12px 10px;
+    }
+    .banner button a{
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: 420;
+    }
+    /*/////////////////////////////////*/
+    /*////////////////////////////////*/
+    #about-us{
+        padding-top: 30px;
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+    #about-us h1{
+        font-size: 21px;
+        font-weight: 520;
+        text-align: center;
+        letter-spacing: .1px;
+        margin-bottom: 1.3rem;
+    }
+    #about-us .about-text{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        font-size: 12px;
+        line-height: 19px;
+        letter-spacing: 1px;
+        margin-bottom: 1.5rem;
+    }
+    #about-us .about-container{
+        padding: 10px 10px 10px 10px;
+    }
+    #about-us > .about-container .row{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 13px;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        padding: 15px 5px 10px 5px;
+    }
+    #about-us .col img{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 1rem;
+    }
+    #about-us > .about-container .col-text ion-icon{
+        font-size: 25px;
+        height: 20px;
+        width: 20px;
+        margin-bottom: 8px;
+    }
+    #about-us > .about-container .col-text h2{
+        font-size: 14px;
+        letter-spacing: .1px;
+        font-weight: 420;
+        padding-bottom: 10px;
+    }
+    #about-us > .about-container .col-text p{
+        font-size: 12px;
+        letter-spacing: .1px;
+        line-height: 18px;
+        margin-bottom: 1rem;
+    }
+    #about-us > .about-container .learn-btn{
+        font-size: 13px;
+        letter-spacing: .1px;
+        font-weight: 420;
+    }
+    /*//////////////////////////////*/
+    /*/////////////////////////////*/
+    .vision{
+        width: 100%;
+        padding-top: 10px;
+    }
+    .vision h3{
+        text-align: center;
+        font-size: 23px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        padding-bottom: 15px;
+    }
+    .vision .vision-text{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        max-width: 600px;
+        line-height: 18px;
+        font-size: 12px;
+        margin-bottom: 12px;
+        letter-spacing: 1px;
+    }
+    .slider{
+        width: 95%;
+        padding: 18px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(10, 320px);
+        grid-gap: 7px;
+        max-width: 1200px;
+        overflow-x: scroll;
+        margin-top: 2.3rem;
+        margin-bottom: 2.7rem;
+        background-color: #eee;
+    }
+    .slider img{
+        width: 100%;
+        height: 250px;
+    }
+    /*//////////////////////////////////*/
+    /*/////////////////////////////////*/
+    .projects{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .projects h2{
+        text-align: center;
+        font-size: 24px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        padding-bottom: 12px;
+    }
+    .projects p{
+        width: 55%;
+        margin: auto;
+        text-align: center;
+        max-width: 550px;
+        line-height: 18px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+    }
+    .project-view{
+        padding: 10px 15px 10px 15px;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .view-row{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        flex-grow: 1;
+        flex-wrap: wrap;
+    }
+    .project-view  .card img{
+        width: 100%;
+        height: 200px;
+        z-index: 5;
+        margin-bottom: 1px;
+    }
+    .view-row .card-info span{
+        font-size: 10px;
+        padding: 8px 8px;
+        background-color: var(--secondary);
+        font-weight: 420;
+        color: var(--text-color);
+        letter-spacing: 1px;
+    }
+    .view-row .card-info h4{
+        padding-top: 1.2rem;
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 420px;
+        padding-bottom: 10px;
+    }
+    .view-row .card-info h5{
+        font-size: 12px;
+        letter-spacing: .1px;
+        line-height: 8x;
+        font-weight: 400;
+        margin-bottom: 1.3rem;
+    }
+    .view-row .card-info a{
+        color: var(--secondary);
+        letter-spacing: 1px;
+        font-size: 14px;
+        font-weight: 420;
+        padding-bottom: 10px;
+    }
+    .view-btn a{
+        background-color: var(--secondary);
+        color: var(--text-color);
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        padding: 11px 43px;
+        box-shadow: 0px 2px 4px #333;
+    }
+    /*//////////////////////////////////*/
+    /*/////////////////////////////////*/
+    .reviews{
+        width: 100%;
+        padding-top: 10px;
+        margin-bottom: 2.5rem;
+    }
+    .reviews h4{
+        text-align: center;
+        font-size: 25px;
+        letter-spacing: .1px;
+        font-weight: 430;
+        padding-bottom: 10px;
+    }
+    .reviews h6{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        max-width: 500px;
+        line-height: 16px;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+    }
+    .client-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        grid-row-gap: 30px;
+        padding: 10px 20px 10px 20px;
+        flex-grow: 1;
+        flex-wrap: wrap;
+    }
+    .client-col{
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .client-col h5{
+        font-size: 17px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        text-align: center;
+    }
+    .client-col ion-icon{
+        font-size: 18px;
+        color: var(--secondary);
+    }
+    .solid-2{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 13px;
+    }
+    .client-col .star-icon{
+        font-size: 13px;
+        text-align: center;
+        margin-bottom: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+    .client-col p{
+        font-size: 12px;
+        letter-spacing: .1px;
+        line-height: 17px;
+        align-self: center;
+        text-align: justify;
+    }
+    /*//////////////////////////////////*/
+    /*/////////////////////////////////*/
+    #contact{
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+    .contact-div{
+        background-color: var(--secondary);
+        padding: 30px 10px 30px 10px;
+    }
+    .contact-div h3{
+        text-align: center;
+        font-size: 27px;
+        letter-spacing: 1px;
+        font-weight: 520;
+        padding-bottom: 15px;
+    }
+    .contact-div p{
+        width: 55%;
+        margin: auto;
+        text-align: center;
+        max-width: 600px;
+        line-height: 18px;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+        color: var(--text-color);
+    }
+    .action-btns button{
+        width: 11rem;
+        padding: 10px 12px;
+        font-size: 12px;
+        letter-spacing: .1px;
+        font-weight: 400;
+        border: 2px solid white;
+    }
+    /*////////////////////////////////*/
+    /*///////////////////////////////*/
+    .container-contact{
+        width: 100%;
+        padding: 20px 10px 20px 10px;
+    }
+    .container-contact .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        align-items: center;
+        padding: 10px 12px 10px 12px;
+    }
+    .trading-hours{
+        align-items: flex-start;
+    }
+    .trading-hours h2{
+        font-weight: 520;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+    .trading-hours hr{
+        margin-bottom: 1rem;
+    }
+    .trading-hours p{
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 18px;
+        padding-bottom: 13px;
+    }
+    .trading-hours .infor h3{
+        font-size: 17px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        padding-bottom: 15px;
+    }
+    .infor ul{
+        margin-bottom: 1rem;
+    }
+    .infor ul li ion-icon{
+        font-size: 15px;
+        padding-right: 10px;
+    }
+    .infor ul li{
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 23px;
+    }
+    .infor ol li{
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 20px;
+    }
+    .infor ol{
+        margin-bottom: 1.5rem;
+    }
+    .map-col iframe{
+        width: 450px;
+        height: 300px;
+    }
+    form{
+        width: 100%;
+        padding: 11px;
+    }
+    form label{
+        color: var(--secondary);
+        justify-content: center;
+        align-items: center;
+    }
+    form label,input{
+        display: block;
+        width: 95%;
+        margin: auto;
+        padding: 11px 10px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        border-radius: 5px;
+    }
+    form::placeholder{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .serv-options{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        width: 100%;
+        grid-column-gap: 20px;
+        margin: auto;
+        margin-top: 1.5rem;
+        margin-bottom: 1.2rem;
+        align-items: center;
+        place-items: center;
+        letter-spacing: 1px;
+        font-size: 11px;
+    }
+    form textarea{
+        display: block;
+        width: 95%;
+        margin: auto;
+        padding: 11px 10px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        border-radius: 5px;
+    }
+    form textarea::placeholder{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    form .submit-btn{
+        width: 95%;
+        margin: auto;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        padding: 12px 10px;
+        background-color: var(--main);
+        color: var(--text-color);
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        outline: none;
+        border: none;
+        text-align: center;
+        justify-content: center;
+        place-items: center;
+        cursor: pointer;
+    }
+    /*///////////////////////////*/
+    /*//////////////////////////*/
+    footer{
+        width: 100%;
+        padding: 30px 10px 25px 10px;
+        background-color: var(--secondary);
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-gap: 13px;
+    }
+    .footer-list h1{
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: var(--text-color);
+        font-weight: 420;
+        margin-bottom: 18px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid white;
+    }
+    .footer-list p{
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: .1px;
+        line-height: 20px;
+        margin-bottom: 1rem;
+    }
+    .socials a ion-icon{
+        width: 21px;
+        height: 21px;
+        padding: 8px 13px;
+    }
+    .footer-list ol li{
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        padding-bottom: 8px;
+    }
+    .footer-list ol li ion-icon{
+        font-size: 13px;
+        padding-right: 8px;
+    }
+    .footer-list ul li{
+        padding-bottom: 5px;
+    }
+    .footer-list ul li  a {
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+    .rights p{
+        font-size: 11px;
+        font-weight: 400;
+    }
+    .rights h1, a{
+        font-size: 12px;
+        letter-spacing: .2px;
+        font-weight: 410;
+    }
+}
+@media screen and (max-width: 875px) and (min-width: 502px) {
+    .logo h1{
+        font-size: 13px;
+        letter-spacing: .1px;
+    }
+    .logo span{
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    nav .menu li{
+        display: inline-block;
+        padding: 7px 6px;
+    }
+    nav li > a{
+        font-size: 13px;
+        letter-spacing: .1px;
+        font-weight: 410;
+    }
+    .call{
+        display: none;
+    }    
+    .call p{
+        font-size: 12px;
+    }
+    .call ion-icon{
+        font-size: 12px;
+    }
+    .text-box{
+        width: 97%;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 15px 15px 15px 30px;
+        border-radius: 5px;
+    }
+    .text-box h1{
+        font-size: 50px;
+        letter-spacing: 1px;
+        line-height: 1.1;
+        font-weight: 550;
+        margin-bottom: 15px;
+    }
+    .text-box p{
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-size: 400;
+        max-width: 550px;
+        line-height: 23px;
+        margin-bottom: 1.5rem;
+    }
+    .banner button{
+        width: 10rem;
+        border: 2px solid white;
+        padding: 12px 10px;
+    }
+    .banner button a{
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 410;
+    }
+    /*/////////////////////////////////*/
+    /*////////////////////////////////*/
+    #about-us{
+        padding-top: 30px;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    #about-us h1{
+        font-size: 23px;
+        font-weight: 530;
+        text-align: center;
+        letter-spacing: .1px;
+        margin-bottom: 1.2rem;
+    }
+    #about-us .about-text{
+        width: 65%;
+        margin: auto;
+        text-align: center;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+    }
+    #about-us .about-container{
+        padding: 10px 10px 10px 10px;
+    }
+    #about-us > .about-container .row{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 25px;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        padding: 15px 25px 10px 25px;
+    }
+    .about-container .row > .col{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .row #middle{
+        margin-block: 1.5rem;
+    }
+    #about-us .col img{
+        width: 90%;
+        height: 250px;
+        margin-bottom: 1rem;
+    }
+    #about-us > .about-container .col-text ion-icon{
+        font-size: 35px;
+        height: 27px;
+        width: 27px;
+        margin-bottom: 8px;
+    }
+    #about-us > .about-container .col-text h2{
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 450;
+        padding-bottom: 12px;
+    }
+    #about-us > .about-container .col-text p{
+        font-size: 13px;
+        letter-spacing: .1px;
+        line-height: 17px;
+        margin-bottom: 1.2rem;
+    }
+    #about-us > .about-container .learn-btn{
+        font-size: 16px;
+        letter-spacing: .1px;
+        font-weight: 420;
+    }
+    /*//////////////////////////////*/
+    /*/////////////////////////////*/
+    .vision{
+        width: 100%;
+        padding-top: 10px;
+    }
+    .vision h3{
+        text-align: center;
+        font-size: 23px;
+        letter-spacing: 1px;
+        font-weight: 450;
+        padding-bottom: 17px;
+    }
+    .vision .vision-text{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        max-width: 600px;
+        line-height: 17px;
+        font-size: 12px;
+        margin-bottom: 12px;
+        letter-spacing: 1px;
+    }
+    .slider{
+        width: 100%;
+        padding: 18px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(10, 300px);
+        grid-gap: 7px;
+        max-width: 1100px;
+        overflow-x: scroll;
+        margin-top: 2.2rem;
+        margin-bottom: 2rem;
+        background-color: #eee;
+    }
+    .slider img{
+        width: 100%;
+        height: 270px;
+    }
+    /*//////////////////////////////////*/
+    /*/////////////////////////////////*/
+    .projects{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .projects h2{
+        text-align: center;
+        font-size: 24px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        padding-bottom: 12px;
+    }
+    .projects p{
+        width: 55%;
+        margin: auto;
+        text-align: center;
+        max-width:550px;
+        line-height: 17px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+    }
+    .project-view{
+        padding: 10px 15px 10px 15px;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .view-row{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        flex-grow: 1;
+        flex-wrap: wrap;
+    }
+    .view-row .card{
+        width: 80%;
+        margin: auto;
+        padding: 10px;
+    }
+    .view-row .card .middle-card{
+        margin-block: 2.5rem;
+    }
+    .project-view  .card img{
+        width: 100%;;
+        height: 230px;
+        z-index: 5;
+        margin-bottom: 1px;
+    }
+    .view-row .card-info span{
+        font-size: 12px;
+        padding: 10px 10px;
+        background-color: var(--secondary);
+        font-weight: 420;
+        color: var(--text-color);
+        letter-spacing: 1px;
+    }
+    .view-row .card-info h4{
+        padding-top: 1.3rem;
+        font-size: 17px;
+        letter-spacing: .1px;
+        font-weight: 420px;
+        padding-bottom: 10px;
+    }
+    .view-row .card-info h5{
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 18px;
+        font-weight: 400;
+        margin-bottom: 1.3rem;
+    }
+    .view-row .card-info a{
+        color: var(--secondary);
+        letter-spacing: 1px;
+        font-size: 17px;
+        font-weight: 420;
+        padding-bottom: 15px;
+    }
+    .view-btn a{
+        background-color: var(--secondary);
+        color: var(--text-color);
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        padding: 13px 45px;
+        box-shadow: 0px 2px 4px #333;
+    }
+    /*//////////////////////////////////*/
+    /*/////////////////////////////////*/
+    .reviews{
+        width: 100%;
+        padding-top: 10px;
+        border-top: 1px solid WHITE;
+        margin-bottom: 2.5rem;
+    }
+    .reviews h4{
+        text-align: center;
+        font-size: 23px;
+        letter-spacing: .1px;
+        font-weight: 430;
+        padding-bottom: 14px;
+    }
+    .reviews h6{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        max-width: 500px;
+        line-height: 16px;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+    }
+    .client-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        grid-row-gap: 30px;
+        padding: 10px 20px 10px 20px;
+        flex-grow: 1;
+        flex-wrap: wrap;
+    }
+    .client-col{
+        align-items: flex-start;
+        padding: 8px;
+    }
+    .client-col h5{
+        font-size: 17px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        text-align: center;
+    }
+    .client-col ion-icon{
+        font-size: 18px;
+    }
+    .solid-2{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 14px;
+    }
+    .client-col .star-icon{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .client-col p{
+        font-size: 12px;
+        letter-spacing: .1px;
+        line-height: 19px;
+        text-align: left;
+    }
+    /*////////////////////////////////*/
+    /*///////////////////////////////*/
+    .container-contact{
+        width: 100%;
+        padding: 35px 10px 20px 10px;
+    }
+    .container-contact .row{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        align-items: center;
+        padding: 10px 15px 10px 15px;
+    }
+    .trading-hours{
+        align-items: flex-start;
+    }
+    .trading-hours h2{
+        color: var(--secondary);
+        font-weight: 600;
+        letter-spacing: .1px;
+        font-size: 23px;
+        padding-bottom: 3px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .trading-hours hr{
+        margin-bottom: 2rem;
+    }
+    .trading-hours p{
+        font-size: 13px;
+        letter-spacing: 1px;
+        line-height: 18px;
+        padding-bottom: 15px;
+    }
+    .trading-hours .infor h3{
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 430;
+        padding-bottom: 16px;
+    }
+    .infor ul{
+        margin-bottom: 1rem;
+    }
+    .infor ul li ion-icon{
+        font-size: 16px;
+        padding-right: 10px;
+    }
+    .infor ul li{
+        font-size: 13px;
+        letter-spacing: 1px;
+        line-height: 25px;
+    }
+    .infor ol li{
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 23px;
+    }
+    .infor ol{
+        margin-bottom: 1.5rem;
+    }
+    .map-col iframe{
+        width: 100%;
+        height: 350px;
+    }
+    form{
+        width: 100%;
+        padding: 11px;
+    }
+    form label{
+        color: var(--secondary);
+        justify-content: center;
+        align-items: center;
+    }
+    form label,input{
+        display: block;
+        width: 90%;
+        margin: auto;
+        padding: 13px 10px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        border-radius: 5px;
+    }
+    form::placeholder{
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    .serv-options{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        width: 95%;
+        grid-column-gap: 20px;
+        margin: auto;
+        margin-top: 1.5rem;
+        margin-bottom: 1.2rem;
+        align-items: center;
+        place-items: center;
+        letter-spacing: 1px;
+        font-size: 13px;
+    }
+    form textarea{
+        display: block;
+        width: 90%;
+        margin: auto;
+        padding: 13px 10px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        border-radius: 5px;
+    }
+    form textarea::placeholder{
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    form .submit-btn{
+        width: 90%;
+        margin: auto;
+        margin-top: 1.5rem;
+        padding: 13px 10px;
+        background-color: var(--main);
+        color: var(--text-color);
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 430;
+        outline: none;
+        border: none;
+        text-align: center;
+        justify-content: center;
+        place-items: center;
+        cursor: pointer;
+        margin-bottom: 1rem;
+    }
+    /*///////////////////////////*/
+    /*//////////////////////////*/
+    footer{
+        width: 100%;
+        padding: 37px 25px 25px 25px;
+        background-color: var(--secondary);
+        display: grid;
+        grid-template-columns:repeat(1, 60% 1fr);
+        grid-gap: 25px;
+    }
+    .footer-list h1{
+        font-size: 20px;
+        letter-spacing: 1px;
+        color: var(--text-color);
+        font-weight: 520;
+        margin-bottom: 18px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid white;
+    }
+    .footer-list p{
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: .1px;
+        line-height: 19px;
+        margin-bottom: 1.2rem;
+    }
+    .socials a ion-icon{
+        width: 24px;
+        height: 24px;
+        padding: 8px 17px;
+    }
+    .footer-list ol li{
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+    .footer-list ol li ion-icon{
+        font-size: 15px;
+        padding-right: 8px;
+    }
+    .footer-list ul li{
+        padding-bottom: 8px;
+    }
+    .footer-list ul li  a {
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+    .rights{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    .rights p{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .rights h1, a{
+        font-size: 13px;
+        letter-spacing: .2px;
+        font-weight: 420;
+    }
+}
+@media screen and (max-width: 790px) and (min-width: 504px) {
+    header{
+        padding: 10px 12px 10px 12px;     
+    }
+    nav{
+        display: inline-flex;
+    }
+    .logo h1{
+        font-size: 14px;
+        letter-spacing: .1px;
+    }
+    .logo span{
+        font-size: 23px;
+        letter-spacing: 1px;
+    }
+    .call{
+        display: none;
+    }
+    nav .menu-btn{
+        display: inline-flex;
+        width: 35px;
+        height: 35px;
+    }
+    nav .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        background-color: #eff0f4;
+    }
+    nav .list{
+        border-top: 1px solid lightgrey;
+        padding-top: 17px;
+    }
+    nav .menu li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 7px 0px;
+    }
+    .menu li a{
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: black;
+        font-weight: 420;
+    }
+    nav label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+        transition: 0.3s ease-in-out;
+    }
+    .text-box{
+        width: 100%;
+        padding: 13px 15px 15px 30px;
+    }
+    .text-box h1{
+        font-size: 40px;
+        letter-spacing: .1px;
+        line-height: 1.2;
+        font-weight: 520;
+        margin-bottom: 15px;
+    }
+    .text-box p{
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-size: 400;
+        max-width: 512px;
+        line-height: 22px;
+        margin-bottom: 1.5rem;
+    }
+    .banner button{
+        width: 10rem;
+        border: 2px solid white;
+        padding: 11px 10px;
+    }
+    .banner button a{
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: 410;
+    }
+    /*/////////////////////////////////*/
+    /*////////////////////////////////*/
+    #about-us{
+        padding-top: 30px;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    #about-us h1{
+        font-size: 20px;
+        font-weight: 520;
+        letter-spacing: .1px;
+        margin-bottom: 1.2rem;
+    }
+    #about-us .about-text{
+        width: 65%;
+        margin: auto;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: .1px;
+        margin-bottom: 2rem;
+    }
+    #about-us > .about-container .row{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 15px 23px 10px 23px;
+    }
+    .about-container .row > .col{
+        width: 85%;
+        margin: auto;
+        text-align: center;
+    }
+    .row #middle{
+        margin-block: 2rem;
+    }
+    #about-us .col img{
+        width: 85%;
+        height: 260px;
+        margin-bottom: 1.2rem;
+    }
+    #about-us > .about-container .col-text ion-icon{
+        font-size: 35px;
+        height: 25px;
+        width: 25px;
+        margin-bottom: 10px;
+    }
+    #about-us > .about-container .col-text h2{
+        font-size: 17px;
+        letter-spacing: 1px;
+        font-weight: 450;
+        padding-bottom: 11px;
+    }
+    #about-us > .about-container .col-text p{
+        font-size: 12px;
+        letter-spacing: .1px;
+        line-height: 18px;
+        margin-bottom: 1.2rem;
+    }
+    #about-us > .about-container .learn-btn{
+        font-size: 15px;
+        letter-spacing: .1px;
+        font-weight: 420;
+    }
+    .vision h3{
+        font-size: 21px;
+        letter-spacing: 1px;
+        font-weight: 450;
+        padding-bottom: 17px;
+    }
+    .vision .vision-text{
+        width: 63%;
+        margin: auto;
+        max-width: 600px;
+        line-height: 18px;
+        font-size: 12px;
+        margin-bottom: 12px;
+        letter-spacing: .1px;
+    }
+    .slider{
+        width: 100%;
+        padding: 18px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(10, 250px);
+        grid-gap: 7px;
+        max-width: 1000px;
+        overflow-x: scroll;
+        margin-top: 2.2rem;
+        margin-bottom: 2rem;
+    }
+    .slider img{
+        width: 100%;
+        height: 250px;
+    }
+    /*//////////////////////////////////*/
+    /*/////////////////////////////////*/
+    .projects h2{
+        font-size: 23px;
+        letter-spacing: 1px;
+        font-weight: 430;
+        padding-bottom: 13px;
+    }
+    .projects p{
+        width: 57%;
+        margin: auto;
+        text-align: center;
+        max-width:550px;
+        line-height: 17px;
+        font-size: 12px;
+        letter-spacing: .1px;
+        margin-bottom: 2rem;
+    }
+    .view-row  #middle-card{
+        margin-block: 1.3rem;
+    }
+    .project-view  .card img{
+        width: 100%;
+        height: 250px;
+        z-index: 5;
+        margin-bottom: 1px;
+    }
+    /*//////////////////////////////////*/
+    /*/////////////////////////////////*/
+    .reviews{
+        width: 100%;
+        padding-top: 20px;
+        margin-bottom: 2.5rem;
+    }
+    .reviews h4{
+        font-size: 21px;
+        letter-spacing: .1px;
+        font-weight: 430;
+        padding-bottom: 14px;
+    }
+    .reviews h6{
+        width: 53%;
+        margin: auto;
+        max-width: 500px;
+        line-height: 16px;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: .1px;
+        margin-bottom: 2rem;
+    }
+    .client-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        grid-row-gap: 30px;
+        padding: 10px 15px 10px 15px;
+    }
+    .client-col h5{
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        text-align: center;
+    }
+    .client-col ion-icon{
+        font-size: 16px;
+    }
+    .solid-2{
+        width: 72%;
+        margin: auto;
+        margin-bottom: 14px;
+    }
+    .client-col .star-icon{
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    .client-col p{
+        font-size: 12px;
+        letter-spacing: .1px;
+        line-height: 18px;
+        text-align: left;
+    }
+    /*//////////////////////////////////*/
+    /*/////////////////////////////////*/
+    #contact{
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+    .contact-div{
+        background-color: var(--secondary);
+        padding: 30px 10px 30px 10px;
+    }
+    .contact-div h3{
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: 520;
+        padding-bottom: 15px;
+    }
+    .contact-div p{
+        width: 55%;
+        margin: auto;
+        text-align: center;
+        max-width: 600px;
+        line-height: 19px;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: .1px;
+        margin-bottom: 10px;
+        color: var(--text-color);
+    }
+    .action-btns{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) and (min-width: 504px) {
+    .logo h1{
+        font-size: 12px;
+        letter-spacing: .1px;
+    }
+    .logo span{
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    .text-box{
+        width: 100%;
+        padding: 13px 10px 15px 25px;
+    }
+    .text-box h1{
+        font-size: 35px;
+        letter-spacing: .1px;
+        line-height: 1.2;
+        font-weight: 500;
+        margin-bottom: 13px;
+    }
+    .text-box p{
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        max-width: 450px;
+        line-height: 22px;
+        margin-bottom: 1.5rem;
+    }
+    .banner button{
+        width: 10rem;
+        border: 2px solid white;
+        padding: 10px 8px;
+    }
+    .banner button a{
+        font-size: 12px;
+        letter-spacing: .1px;
+        font-weight: 400;
+    }
+    #about-us h1{
+        font-size: 18px;
+        font-weight: 510;
+        letter-spacing: .1px;
+        margin-bottom: 1.2rem;
+    }
+    #about-us .about-text{
+        width: 70%;
+        margin: auto;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0px;
+        margin-bottom: 2rem;
+    }
+    #about-us > .about-container .row{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 25px;
+        padding: 15px 20px 10px 20px;
+    }
+    .about-container .row > .col{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    .row #middle{
+        margin-block: 2.3rem;
+    }
+    #about-us .col img{
+        width: 80%;
+        height: 240px;
+        margin-bottom: 1.2rem;
+    }
+    #about-us > .about-container .col-text ion-icon{
+        font-size: 35px;
+        height: 25px;
+        width: 25px;
+        margin-bottom: 10px;
+    }
+    #about-us > .about-container .col-text h2{
+        font-size: 17px;
+        letter-spacing: 1px;
+        font-weight: 450;
+        padding-bottom: 11px;
+    }
+    #about-us > .about-container .col-text p{
+        font-size: 12px;
+        letter-spacing: .1px;
+        line-height: 18px;
+        margin-bottom: 1.2rem;
+    }
+    #about-us > .about-container .learn-btn{
+        font-size: 15px;
+        letter-spacing: .1px;
+        font-weight: 420;
+    }
+    .vision h3{
+        font-size: 21px;
+        letter-spacing: 1px;
+        font-weight: 450;
+        padding-bottom: 17px;
+    }
+    .vision .vision-text{
+        width: 63%;
+        margin: auto;
+        max-width: 600px;
+        line-height: 18px;
+        font-size: 12px;
+        margin-bottom: 12px;
+        letter-spacing: .1px;
+    }
+    .projects p{
+        width: 65%;
+        margin: auto;
+        text-align: center;
+        max-width:600px;
+        line-height: 17px;
+        font-size: 12px;
+        letter-spacing: .1px;
+        margin-bottom: 2rem;
+    }
+    .view-row .card{
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+    }
+    .view-row .card-info span{
+        font-size: 11px;
+        padding: 10px 10px;
+        letter-spacing: 1px;
+    }
+    .view-row .card-info h4{
+        padding-top: 1.5rem;
+        font-size: 15px;
+        letter-spacing: .1px;
+        font-weight: 420px;
+        padding-bottom: 10px;
+    }
+    .view-row .card-info h5{
+        font-size: 12px;
+        letter-spacing: .1px;
+        line-height: 17px;
+        font-weight: 400;
+        margin-bottom: 1.3rem;
+    }
+    .view-row .card-info a{
+        letter-spacing: 1px;
+        font-size: 15px;
+        font-weight: 420;
+        padding-bottom: 15px;
+    }
+    .view-btn a{
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        padding: 12px 43px;
+        box-shadow: 0px 2px 4px #333;
+    }
+    /*////////////////////////////////////////*/
+    /*////////////////////////////////////////*/
+    .reviews h6{
+        width: 65%;
+        margin: auto;
+        text-align: center;
+        max-width: 500px;
+        line-height: 16px;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+    }
+    .client-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        grid-row-gap: 40px;
+        padding: 10px 20px 10px 20px;
+        flex-grow: 1;
+        flex-wrap: wrap;
+    }
+    .client-col{
+        align-items: flex-start;
+        text-align: center;
+        padding: 12px;
+        width: 90%;
+        margin: auto;
+    }
+    .client-col h5{
+        font-size: 17px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        text-align: center;
+        padding-bottom: 3px;
+    }
+    .client-col .star-icon{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .client-col p{
+        font-size: 12px;
+        letter-spacing: .1px;
+        line-height: 18px;
+        text-align: center;
+    }
+    .contact-div{
+        background-color: var(--secondary);
+        padding: 30px 10px 25px 10px;
+    }
+    .contact-div h3{
+        font-size: 22px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        padding-bottom: 15px;
+    }
+    .contact-div p{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        max-width: 600px;
+        line-height: 19px;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        margin-bottom: 10px;
+    }
+    .trading-hours h2{
+        font-weight: 550;
+        letter-spacing: .1px;
+        font-size: 21px;
+        padding-bottom: 3px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .trading-hours hr{
+        margin-bottom: 2rem;
+    }
+    .trading-hours p{
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 17px;
+        padding-bottom: 15px;
+    }
+    .trading-hours .infor h3{
+        font-size: 17px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        padding-bottom: 16px;
+    }
+    .infor ul{
+        margin-bottom: 1rem;
+    }
+    .infor ul li ion-icon{
+        font-size: 15px;
+        padding-right: 10px;
+    }
+    .infor ul li{
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 24px;
+    }
+    .infor ol li{
+        font-size: 13px;
+        letter-spacing: 1px;
+        line-height: 22px;
+    }
+    .infor ol{
+        margin-bottom: 1.5rem;
+    }
+    .map-col iframe{
+        width: 100%;
+        height: 320px;
+    }
+    form{
+        width: 100%;
+        padding: 10px;
+    }
+    form label{
+        justify-content: center;
+        align-items: center;
+    }
+    form label,input{
+        display: block;
+        width: 95%;
+        margin: auto;
+        padding: 12px 10px;
+        font-size: 13px;
+        letter-spacing: 1px;
+        border-radius: 5px;
+    }
+    form::placeholder{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .serv-options{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        width: 100%;
+        grid-column-gap: 20px;
+        margin: auto;
+        margin-top: 1.5rem;
+        margin-bottom: 1.2rem;
+        align-items: center;
+        place-items: center;
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
+    form textarea{
+        display: block;
+        width: 95%;
+        margin: auto;
+        padding: 12px 10px;
+        font-size: 13px;
+        letter-spacing: 1px;
+        border-radius: 5px;
+    }
+    form textarea::placeholder{
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    form .submit-btn{
+        width: 95%;
+        margin: auto;
+        margin-top: 1.5rem;
+        padding: 13px 10px;
+        background-color: var(--main);
+        color: var(--text-color);
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 430;
+        outline: none;
+        border: none;
+        text-align: center;
+        justify-content: center;
+        place-items: center;
+        cursor: pointer;
+        margin-bottom: 1rem;
+    }
+    /*///////////////////////////*/
+    /*//////////////////////////*/
+    footer{
+        width: 100%;
+        padding: 35px 25px 25px 25px;
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+    .footer-list h1{
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: var(--text-color);
+        font-weight: 500;
+        margin-bottom: 18px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid white;
+    }
+    .footer-list p{
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        line-height: 19px;
+        margin-bottom: 1.2rem;
+    }
+    .socials a ion-icon{
+        width: 25px;
+        height: 25px;
+        padding: 4px 17px;
+    }
+    .footer-list ol li{
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        padding-bottom: 12px;
+    }
+    .footer-list ol li ion-icon{
+        font-size: 16px;
+        padding-right: 8px;
+    }
+    .footer-list ul li{
+        padding-bottom: 10px;
+    }
+    .footer-list ul li  a {
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+    .rights{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px;
+    }
+    .rights p{
+        font-size: 13px;
+        padding-bottom: 10px;
+        font-weight: 400;
+    }
+    .rights h1, a{
+        font-size: 14px;
+        letter-spacing: .1px;
+        font-weight: 420;
+    }
+}
+@media screen and (max-width:504px) {
+    header{
+        padding: 10px 12px 5px 12px;     
+    }
+    nav{
+        display: inline-flex;
+    }
+    .logo h1{
+        font-size: 13px;
+        letter-spacing: .1px;
+    }
+    .logo span{
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    .call{
+        display: none;
+    }
+    nav .menu-btn{
+        display: inline-flex;
+        width: 33px;
+        height: 33px;
+    }
+    nav .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        background-color: #eff0f4;
+    }
+    nav .list{
+        border-top: 1px solid lightgrey;
+        padding-top: 16px;
+    }
+    nav .menu li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 6px 0px;
+    }
+    .menu li a{
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: black;
+        font-weight: 420;
+    }
+    nav label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+        transition: 0.3s ease-in-out;
+    }
+    .text-box{
+        width: 100%;
+        padding: 10px 10px 10px 20px;
+    }
+    .text-box h1{
+        font-size: 33px;
+        letter-spacing: .1px;
+        line-height: 1.2;
+        font-weight: 430;
+        margin-bottom: 12px;
+    }
+    .text-box p{
+        font-size: 12px;
+        letter-spacing: .1px;
+        font-weight: 400;
+        max-width: 365px;
+        line-height: 20px;
+        margin-bottom: 1.5rem;
+    }
+    .banner button{
+        width: 9rem;
+        border: 2px solid white;
+        padding: 10px 8px;
+    }
+    .banner button a{
+        font-size: 12px;
+        letter-spacing: 0px;
+        font-weight: 400;
+    }
+    #about-us h1{
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 0px;
+        margin-bottom: 1.2rem;
+    }
+    #about-us .about-text{
+        width: 80%;
+        margin: auto;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0px;
+        margin-bottom: 2rem;
+    }
+    #about-us > .about-container .row{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 25px;
+        padding: 10px 15px 10px 15px;
+    }
+    .about-container .row > .col{
+        width: 95%;
+        margin: auto;
+        text-align: center;
+    }
+    .row #middle{
+        margin-block: 2.1rem;
+    }
+    #about-us .col img{
+        width: 75%;
+        height: 220px;
+        margin-bottom: 1.2rem;
+    }
+    #about-us > .about-container .col-text ion-icon{
+        font-size: 33px;
+        height: 23px;
+        width: 23px;
+        margin-bottom: 10px;
+    }
+    #about-us > .about-container .col-text h2{
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        padding-bottom: 10px;
+    }
+    #about-us > .about-container .col-text p{
+        font-size: 12px;
+        letter-spacing: 0px;
+        line-height: 18px;
+        margin-bottom: 1rem;
+    }
+    #about-us > .about-container .learn-btn{
+        font-size: 14px;
+        letter-spacing: .1px;
+        font-weight: 420;
+    }
+    .vision h3{
+        font-size: 19px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        padding-bottom: 17px;
+    }
+    .vision .vision-text{
+        width: 80%;
+        margin: auto;
+        max-width: 600px;
+        line-height: 19px;
+        font-size: 12px;
+        margin-bottom: 12px;
+        letter-spacing: .1px;
+    }
+    .slider{
+        width: 100%;
+        padding: 15px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(10, 230px);
+        grid-gap: 7px;
+        max-width: 1000px;
+        overflow-x: scroll;
+        margin-top: 2.2rem;
+        margin-bottom: 2rem;
+    }
+    .slider img{
+        width: 100%;
+        height: 230px;
+    }
+    .projects h2{
+        font-size: 19px;
+        letter-spacing: 1px;
+        font-weight: 430;
+        padding-bottom: 13px;
+    }
+    .projects p{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        max-width:600px;
+        line-height: 16px;
+        font-size: 12px;
+        letter-spacing: .1px;
+        margin-bottom: 2rem;
+    }
+    .view-row{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        flex-grow: 1;
+        flex-wrap: wrap;
+    }
+    .view-row .card{
+        width: 95%;
+        margin: auto;
+        padding: 10px;
+    }
+    .view-row .card-info span{
+        font-size: 11px;
+        padding: 10px 10px;
+        letter-spacing: 1px;
+    }
+    .view-row .card-info h4{
+        padding-top: 1.5rem;
+        font-size: 15px;
+        letter-spacing: .1px;
+        font-weight: 420px;
+        padding-bottom: 10px;
+    }
+    .view-row .card-info h5{
+        font-size: 12px;
+        letter-spacing: .1px;
+        line-height: 17px;
+        font-weight: 400;
+        margin-bottom: 1.3rem;
+    }
+    .view-row .card-info a{
+        letter-spacing: 1px;
+        font-size: 15px;
+        font-weight: 420;
+        padding-bottom: 15px;
+    }
+    .view-btn a{
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        padding: 12px 43px;
+        box-shadow: 0px 2px 4px #333;
+    }
+    /*////////////////////////////////////////*/
+    /*////////////////////////////////////////*/
+    .reviews h4{
+        font-size: 19px;
+        letter-spacing: .1px;
+        font-weight: 430;
+        padding-bottom: 14px;
+    }
+    .reviews h6{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        max-width: 550px;
+        line-height: 16px;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: .1px;
+        margin-bottom: 2rem;
+    }
+    .client-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        grid-row-gap: 40px;
+        padding: 10px 15px 10px 15px;
+    }
+    .client-col{
+        align-items: flex-start;
+        text-align: center;
+        padding: 11px;
+        width: 93%;
+        margin: auto;
+    }
+    .client-col h5{
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        text-align: center;
+        padding-bottom: 3px;
+    }
+    .client-col .star-icon{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .client-col p{
+        font-size: 12px;
+        letter-spacing: 0px;
+        line-height: 18px;
+        text-align: center;
+    }
+    .container-contact .row{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        align-items: center;
+        padding: 10px 10px 10px 10px;
+    }
+    .contact-div{
+        background-color: var(--secondary);
+        padding: 30px 10px 25px 10px;
+    }
+    .contact-div h3{
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        padding-bottom: 15px;
+    }
+    .contact-div p{
+        width: 75%;
+        margin: auto;
+        text-align: center;
+        max-width: 600px;
+        line-height: 19px;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        margin-bottom: 10px;
+    }
+    .action-btns{
+        display: none;
+    }
+    .trading-hours h2{
+        font-weight: 530;
+        letter-spacing: .1px;
+        font-size: 20px;
+        padding-bottom: 3px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .trading-hours hr{
+        margin-bottom: 2rem;
+    }
+    .trading-hours p{
+        font-size: 12px;
+        letter-spacing: .1px;
+        line-height: 17px;
+        padding-bottom: 15px;
+    }
+    .trading-hours .infor h3{
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        padding-bottom: 16px;
+    }
+    .infor ul{
+        margin-bottom: 1rem;
+    }
+    .infor ul li ion-icon{
+        font-size: 14px;
+        padding-right: 10px;
+    }
+    .infor ul li{
+        font-size: 12px;
+        letter-spacing: .1px;
+        line-height: 24px;
+    }
+    .infor ol li{
+        font-size: 12px;
+        letter-spacing: .1px;
+        line-height: 22px;
+    }
+    .infor ol{
+        margin-bottom: 1.5rem;
+    }
+    .map-col iframe{
+        width: 100%;
+        height: 300px;
+    }
+    form{
+        width: 100%;
+        padding: 10px;
+    }
+    form label{
+        justify-content: center;
+        align-items: center;
+    }
+    form label,input{
+        display: block;
+        width: 95%;
+        margin: auto;
+        padding: 12px 10px;
+        font-size: 12px;
+        letter-spacing: .1px;
+        border-radius: 5px;
+    }
+    form::placeholder{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .serv-options{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        width: 100%;
+        grid-column-gap: 20px;
+        margin: auto;
+        margin-top: 1.5rem;
+        margin-bottom: 1.2rem;
+        align-items: center;
+        place-items: center;
+        letter-spacing: .1px;
+        font-size: 12px;
+    }
+    form textarea{
+        display: block;
+        width: 95%;
+        margin: auto;
+        padding: 12px 10px;
+        font-size: 12px;
+        letter-spacing: .1px;
+        border-radius: 5px;
+    }
+    form textarea::placeholder{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    form .submit-btn{
+        width: 95%;
+        margin: auto;
+        margin-top: 1.5rem;
+        padding: 12px 10px;
+        background-color: var(--main);
+        color: var(--text-color);
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 430;
+        outline: none;
+        border: none;
+        text-align: center;
+        justify-content: center;
+        place-items: center;
+        cursor: pointer;
+        margin-bottom: 1rem;
+    }
+    /*///////////////////////////*/
+    /*//////////////////////////*/
+    footer{
+        width: 100%;
+        padding: 30px 20px 20px 20px;
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+    .footer-list h1{
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: var(--text-color);
+        font-weight: 430;
+        margin-bottom: 19px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid white;
+    }
+    .footer-list p{
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        line-height: 19px;
+        margin-bottom: 1.2rem;
+    }
+    .socials a ion-icon{
+        width: 23px;
+        height: 23px;
+        padding: 4px 15px;
+    }
+    .footer-list ol li{
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        padding-bottom: 12px;
+    }
+    .footer-list ol li ion-icon{
+        font-size: 15px;
+        padding-right: 8px;
+    }
+    .footer-list ul li{
+        padding-bottom: 10px;
+    }
+    .footer-list ul li  a {
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+    .rights{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        padding: 23px;
+    }
+    .rights p{
+        font-size: 12px;
+        padding-bottom: 8px;
+        font-weight: 400;
+    }
+    .rights h1, a{
+        font-size: 12px;
+        letter-spacing: .1px;
+        font-weight: 420;
+    }
+}
+@media screen and (max-width:425px) {
+    header{
+        padding: 10px;
+    }
+    .logo h1{
+        font-size: 11px;
+    }
+    .logo span{
+        font-size: 19px;
+        letter-spacing: 1px;
+    }
+    .banner{
+        width: 100%;
+        min-height: 85vh;
+        background-color: var(--secondary);
+        background-image: linear-gradient(to right, #07071ede, transparent),url(images/img-3.jpg);
+    }
+    .text-box{
+        width: 100%;
+        padding: 10px 10px 10px 15px;
+    }
+    .text-box h1{
+        font-size: 29px;
+        letter-spacing: 0px;
+        line-height: 1.2;
+        font-weight: 430;
+        margin-bottom: 11px;
+    }
+    .text-box p{
+        font-size: 12px;
+        letter-spacing: .1px;
+        font-weight: 400;
+        max-width: 350px;
+        line-height: 20px;
+        margin-bottom: 1.5rem;
+    }
+    .banner button{
+        width: 8rem;
+        border: 2px solid white;
+        padding: 10px 8px;
+    }
+    .banner button a{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .service-btn{
+        margin-left: 10px;
+    }
+    /*/////////////////////////////////*/
+    /*////////////////////////////////*/
+    #about-us{
+        padding-top: 20px;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    #about-us h1{
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+    }
+    #about-us .about-text{
+        width: 85%;
+        margin: auto;
+        font-size: 11px;
+        line-height: 15px;
+        margin-bottom: 2rem;
+    }
+    #about-us > .about-container .row{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+        padding: 10px 10px 10px 10px;
+    }
+    .about-container .row  .col{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .row #middle{
+        margin-block: 1.5rem;
+    }
+    #about-us .col{
+        align-items: flex-start;
+        padding: 10px 10px 15px 10px;
+        box-shadow:  2px 3px  #ccc;
+    }
+    #about-us .col img{
+        width: 80%;
+        height: 200px;
+        margin-bottom: 1.2rem;
+    }
+    #about-us > .about-container .col-text ion-icon{
+        font-size: 33px;
+        height: 23px;
+        width: 23px;
+        margin-bottom: 10px;
+    }
+    #about-us > .about-container .col-text h2{
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        padding-bottom: 10px;
+    }
+    #about-us > .about-container .col-text p{
+        font-size: 11px;
+        line-height: 16px;
+        margin-bottom: 1rem;
+    }
+    #about-us > .about-container .learn-btn{
+        font-size: 14px;
+        letter-spacing: .1px;
+        font-weight: 420;
+    }
+    .vision{
+        width: 100%;
+        padding-top: 10px;
+    }
+    .vision h3{
+        font-size: 19px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        padding-bottom: 17px;
+    }
+    .vision .vision-text{
+        width: 85%;
+        margin: auto;
+        max-width: 600px;
+        line-height: 18px;
+        font-size: 11px;
+        margin-bottom: 12px;
+        letter-spacing: 0px;
+    }
+    .slider{
+        width: 100%;
+        padding: 13px;
+        grid-template-columns: repeat(10, 200px);
+        grid-gap: 5px;
+        max-width: 900px;
+        margin-top: 2rem;
+        margin-bottom: 1.7rem;
+    }
+    .slider img{
+        width: 100%;
+        height: 200px;
+    }
+    .projects{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .projects h2{
+        font-size: 17px;
+        letter-spacing: .1px;
+        font-weight: 420;
+        padding-bottom: 13px;
+    }
+    .projects p{
+        width: 85%;
+        margin: auto;
+        text-align: center;
+        max-width:600px;
+        line-height: 16px;
+        font-size: 11px;
+        letter-spacing: 0px;
+        margin-bottom: 1.5rem;
+    }
+    .view-row{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .view-row .card{
+        width: 100%;
+        margin: auto;
+        padding: 8px;
+    }
+    .view-row .middle-card{
+        margin-block: 10px;
+    }
+    .project-view  .card img{
+        width: 100%;;
+        height: 200px;
+    }
+    .view-row .card-info span{
+        font-size: 10px;
+        padding: 10px 10px;
+        letter-spacing: 1px;
+    }
+    .view-row .card-info h4{
+        padding-top: 1.2rem;
+        font-size: 14px;
+        letter-spacing: 0px;
+        font-weight: 420px;
+        padding-bottom: 10px;
+    }
+    .view-row .card-info h5{
+        font-size: 11px;
+        letter-spacing: 0px;
+        line-height: 16px;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+    .view-row .card-info a{
+        letter-spacing: 1px;
+        font-size: 14px;
+        font-weight: 420;
+        padding-bottom: 15px;
+    }
+    .view-btn a{
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        padding: 11px 35px;
+    }
+    .reviews{
+        width: 100%;
+        padding-top: 25px;
+        border-top: .1px solid rgb(226, 223, 223);
+        margin-bottom: 1rem;
+    }
+    .reviews h4{
+        font-size: 18px;
+        letter-spacing: 0px;
+        font-weight: 420;
+        padding-bottom: 13px;
+    }
+    .reviews h6{
+        width: 85%;
+        margin: auto;
+        text-align: center;
+        max-width: 550px;
+        line-height: 16px;
+        font-size: 11px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        margin-bottom: 1.5rem;
+    }
+    .client-container{
+        display: grid;
+        grid-template-columns: 1, 1fr;
+        grid-gap: 30px;
+        grid-row-gap: 30px;
+        padding: 10px 10px 10px 10px;
+    }
+    .client-col{
+        align-items: flex-start;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        margin: auto;
+    }
+    .client-col h5{
+        font-size: 16px;
+        letter-spacing: .1px;
+        font-weight: 420;
+        text-align: center;
+        padding-bottom: 3px;
+    }
+    .client-col .star-icon{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .client-col p{
+        font-size: 11px;
+        line-height: 16px;
+        text-align: center;
+    }
+    #contact{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .contact-div{
+        background-color: var(--secondary);
+        padding: 25px 10px 20px 10px;
+    }
+    .contact-div h3{
+        font-size: 18px;
+        letter-spacing: .1px;
+        font-weight: 450;
+        padding-bottom: 13px;
+    }
+    .contact-div p{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        max-width: 600px;
+        line-height: 19px;
+        font-size: 11px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    .container-contact{
+        width: 100%;
+        padding: 15px 10px 15px 10px;
+    }
+    .container-contact .row{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        align-items: center;
+        padding: 10px 3px 10px 3px;
+    }
+    .trading-hours h2{
+        font-weight: 520;
+        letter-spacing: 0px;
+        font-size: 18px;
+        padding-bottom: 3px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .trading-hours hr{
+        margin-bottom: 1rem;
+    }
+    .trading-hours p{
+        font-size: 12px;
+        letter-spacing: 0px;
+        line-height: 16px;
+        padding-bottom: 15px;
+    }
+    .trading-hours .infor h3{
+        font-size: 15px;
+        letter-spacing: 0px;
+        font-weight: 420;
+        padding-bottom: 14px;
+    }
+    .infor ul{
+        margin-bottom: 1rem;
+    }
+    .infor ul li ion-icon{
+        font-size: 12px;
+        padding-right: 10px;
+    }
+    .infor ul li{
+        font-size: 12px;
+        letter-spacing: 0px;
+        line-height: 24px;
+    }
+    .infor ol li{
+        font-size: 12px;
+        letter-spacing: 0px;
+        line-height: 22px;
+    }
+    .infor ol{
+        margin-bottom: 1.3rem;
+    }
+    .map-col iframe{
+        width: 100%;
+        height: 300px;
+    }
+    form{
+        width: 100%;
+        padding: 10px;
+    }
+    form label,input{
+        display: block;
+        width: 100%;
+        margin: auto;
+        padding: 11px 10px;
+        font-size: 12px;
+        letter-spacing: 0px;
+        border-radius: 5px;
+    }
+    form::placeholder{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .serv-options{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+        width: 97%;
+        grid-column-gap: 15px;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        letter-spacing: .1px;
+        font-size: 12px;
+    }
+    form textarea{
+        display: block;
+        width: 97%;
+        margin: auto;
+        padding: 11px 10px;
+        font-size: 12px;
+        letter-spacing: 0px;
+    }
+    form textarea::placeholder{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    form .submit-btn{
+        width: 97%;
+        margin: auto;
+        margin-top: 1.5rem;
+        padding: 12px 10px;
+        background-color: var(--main);
+        color: var(--text-color);
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 430;
+        outline: none;
+        border: none;
+        text-align: center;
+        justify-content: center;
+        place-items: center;
+        cursor: pointer;
+        margin-bottom: 1rem;
+    }
+    footer{
+        width: 100%;
+        padding: 20px 15px 20px 15px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+    .footer-list h1{
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 420;
+        margin-bottom: 17px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.853);
+    }
+    .footer-list p{
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 19px;
+        margin-bottom: 1.1rem;
+    }
+    .socials a ion-icon{
+        width: 21px;
+        height: 21px;
+        padding: 4px 15px;
+    }
+    .footer-list ol li{
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+    .footer-list ol li ion-icon{
+        font-size: 13px;
+        padding-right: 8px;
+    }
+    .footer-list ul li{
+        padding-bottom: 8px;
+    }
+    .footer-list ul li  a {
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+    .rights{
+        width: 100%;
+        padding: 20px;
+    }
+    .rights p{
+        font-size: 11px;
+        padding-bottom: 7px;
+        font-weight: 400;
+    }
+    .rights h1, a{
+        font-size: 12px;
+        letter-spacing: 0px;
+        font-weight: 420;
+    }
+}
+@media screen and (max-width: 375px) {
+    .logo h1{
+        font-size: 12px;
+        letter-spacing: .1px;
+    }
+    .logo span{
+        font-size: 19px;
+        letter-spacing: 1px;
+    }
+    .call{
+        display: none;
+    }
+    nav .menu-btn{
+        display: inline-flex;
+        width: 30px;
+        height: 30px;
+    }
+    nav .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        background-color: #eff0f4;
+    }
+    nav .list{
+        border-top: 1px solid lightgrey;
+        padding-top: 15px;
+    }
+    nav .menu li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3px 0px;
+    }
+    .menu li a{
+        font-size: 13px;
+        letter-spacing: 1px;
+        color: black;
+        font-weight: 420;
+    }
+    .text-box h1{
+        font-size: 25px;
+        line-height: 1.2;
+        font-weight: 430;
+        margin-bottom: 10px;
+    }
+    .text-box p{
+        font-size: 11px;
+        letter-spacing: 0px;
+        font-weight: 400;
+        max-width: 300px;
+        line-height: 19px;
+        margin-bottom: 1.5rem;
+    }
+    .banner button{
+        width: 8rem;
+        border: 2px solid white;
+        padding: 10px 8px;
+    }
+}
+/*//////////////////////////////////////////*/
+/*/////////////////////////////////////////*/
